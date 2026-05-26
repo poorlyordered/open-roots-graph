@@ -90,11 +90,16 @@ npm run lint
 npm run build
 ```
 
+## Data Quality Checks
+
+See [docs/data-quality-checks.md](docs/data-quality-checks.md) for the reusable check taxonomy used to classify chronology, duplicate, source, place, topology, and privacy issues.
+
 ## Project Structure
 
 ```text
 backend/            FastAPI app, Neo4j repositories, scripts
 frontend/           Next.js app
+docs/               Public design and data-quality guidance
 examples/           Synthetic public fixtures
 pod.sh              Local Podman orchestration
 .env.example        Safe configuration template
