@@ -1,0 +1,33 @@
+.env
+.env.*
+!.env.example
+
+# Private genealogy data and generated exports
+data/
+*.ged
+*.GED
+*.zip
+!examples/*.ged
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+npm-debug.log*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

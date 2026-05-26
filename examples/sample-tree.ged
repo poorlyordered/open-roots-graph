@@ -1,0 +1,44 @@
+0 HEAD
+1 SOUR Open Roots Graph
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Alex /Example/
+2 GIVN Alex
+2 SURN Example
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1900
+2 PLAC Springfield, Example County, Illinois, USA
+1 DEAT
+2 DATE 1 JAN 1970
+2 PLAC Springfield, Example County, Illinois, USA
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Jordan /Sample/
+2 GIVN Jordan
+2 SURN Sample
+1 SEX F
+1 BIRT
+2 DATE 5 MAY 1905
+2 PLAC River City, Example County, Missouri, USA
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Casey /Example/
+2 GIVN Casey
+2 SURN Example
+1 SEX F
+1 BIRT
+2 DATE 10 OCT 1930
+2 PLAC Springfield, Example County, Illinois, USA
+1 FAMC @F1@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+1 MARR
+2 DATE 1 JUN 1928
+2 PLAC Springfield, Example County, Illinois, USA
+0 TRLR

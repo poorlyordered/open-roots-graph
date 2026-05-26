@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a1a;
+  --foreground: #e0e0e0;
+  --accent: #4488ff;
+  --accent-pink: #ff6688;
+  --accent-green: #44cc88;
+  --accent-orange: #ffaa44;
+  --surface: #141428;
+  --surface-hover: #1a1a3a;
+  --border: rgba(100, 100, 200, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Leaflet dark theme overrides */
+.leaflet-container {
+  background: #0a0a1a !important;
+}
+
+.leaflet-control-zoom a {
+  background: var(--surface) !important;
+  color: var(--foreground) !important;
+  border-color: var(--border) !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(10, 10, 26, 0.8) !important;
+  color: #666 !important;
+}
+
+.leaflet-control-attribution a {
+  color: #888 !important;
+}
