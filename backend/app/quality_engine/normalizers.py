@@ -47,6 +47,7 @@ QUALIFIERS = {
 }
 
 COUNTRY_ALIASES = {
+    "USA": "USA",
     "UNITED STATES": "USA",
     "UNITED STATES OF AMERICA": "USA",
     "U.S.": "USA",
@@ -201,4 +202,3 @@ def _extract_year(value: str | None) -> int | None:
 _GEDCOM_DATE_RE = re.compile(
     r"^(ABT |AFT |BEF |CAL |EST )?((\d{1,2} )?(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC) )?\d{4}$"
 )
-

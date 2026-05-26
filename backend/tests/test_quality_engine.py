@@ -13,6 +13,7 @@ def test_normalize_gedcom_date_proposes_standard_month_case():
 
 def test_normalize_place_removes_duplicate_components_and_aliases():
     assert normalize_place("Kentucky, Kentucky, United States of America") == "Kentucky, USA"
+    assert normalize_place("Muncie, Delaware, Indiana, USA") == "Muncie, Delaware, Indiana, USA"
 
 
 def test_runner_reports_safe_fixes_and_review_fixes():
