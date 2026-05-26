@@ -94,6 +94,15 @@ npm run build
 
 See [docs/data-quality-checks.md](docs/data-quality-checks.md) for the reusable check taxonomy used to classify chronology, duplicate, source, place, topology, and privacy issues.
 
+Run the current Python quality engine against a GEDCOM file:
+
+```bash
+cd backend
+python3 -m scripts.quality_report --gedcom ../examples/sample-tree.ged --out ../data/quality_report.json
+```
+
+The report includes structured findings plus automatic and review-only fix proposals. Automatic proposals are intended for safe normalizations such as date syntax, place casing, and duplicate place components. Relationship changes and duplicate-person merges are review-only.
+
 ## Project Structure
 
 ```text

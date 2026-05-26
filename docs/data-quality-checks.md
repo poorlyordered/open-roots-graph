@@ -104,6 +104,17 @@ Every check should produce structured findings:
 }
 ```
 
+## Implementation Pattern
+
+Use Python for rule execution and cleaning decisions. Python is better suited for parsing GEDCOM, normalizing dates and places, fuzzy matching, confidence scoring, report generation, and preserving before/after provenance.
+
+Use Cypher for graph storage and set-based candidate retrieval. Cypher is useful for finding relationship patterns, persisting findings, and applying explicit reviewed updates to Neo4j, but the reusable cleaning logic should remain in Python.
+
+Fixes should be split into two modes:
+
+- `automatic`: safe syntax and formatting changes that preserve meaning.
+- `review`: changes that alter identity, relationships, parentage, source interpretation, or privacy posture.
+
 ## Suggested Cleanup Order
 
 1. Fix critical chronology and graph-cycle issues.
@@ -112,4 +123,3 @@ Every check should produce structured findings:
 4. Normalize places enough to support deduplication and geocoding.
 5. Review unsourced or weakly sourced direct ancestors.
 6. Clean names, suffixes, casing, and low-severity style issues.
-
